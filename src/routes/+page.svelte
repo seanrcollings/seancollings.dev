@@ -1,16 +1,14 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
-	import { fade, fly } from 'svelte/transition';
+	import {  fly } from 'svelte/transition';
 
-	let animate = false;
-	onMount(() => {
-		animate = true;
-	});
+	let width = 10000;
 </script>
 
-<!-- {#if animate} -->
+<svelte:window bind:innerWidth={width} />
+
 <div class="bg-slate-800">
-	<div class="pt-16 triangle h-[100vh] w-full" transition:fly={{ x: -500 }}>
+	<div class="pt-16 triangle h-[100vh] w-full bg-indigo-500 lg:bg-transparent" transition:fly={{ x: -500 }} class:triangle={width >= 1024}>
 		<div class="xl:ml-[5%] xl:mt-[8%] sm:p-2 w-fit max-w-7xl grid lg:grid-cols-2 gap-4 ">
 			<div class="flex flex-col gap-4 items-center">
 				<img
@@ -22,7 +20,7 @@
 					Hello! <span>👋</span>
 				</h1>
 			</div>
-			<div class="text-white text-lg px-4 sm:px-0">
+			<div class="text-white text-lg px-4 md:px-20 sm:px-10">
 				<p class="mb-4 leading-7">
 					Cillum ut ullamco eiusmod eu elit consequat quis culpa in reprehenderit velit veniam nisi
 					officia. Dolor voluptate nulla ipsum nisi elit deserunt excepteur amet consectetur
@@ -48,10 +46,10 @@
 	</div>
 </div>
 
-<!-- {/if} -->
 <style lang="postcss">
 	.triangle {
-		background: linear-gradient(135deg, theme(colors.indigo.500) 60%, transparent 40%);
+		background: linear-gradient(135deg, theme(colors.indigo.500) 70%, transparent 40%);
 		filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.4));
 	}
+
 </style>
