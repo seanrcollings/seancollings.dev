@@ -21,13 +21,13 @@
 		<div class="flex gap-4 flex-wrap">
 			{#each data.projects as project}
 				<a
-					class="bg-slate-700 w-56 min-h-28 rounded-md border-blue-400 border text-gray-50 p-4 flex flex-col gap-1 hover:border-blue-300 hover:bg-slate-800 transition-colors"
+					class="bg-slate-700 w-56 h-28 rounded-md border-blue-400 border text-gray-50 p-4 flex flex-col gap-1 hover:border-blue-300 hover:bg-slate-800 transition-colors"
 					href={project.link}
 					target="_blank"
 				>
 					<div class="flex items-center gap-2">
 						<i class="material-symbols-outlined">{project.icon}</i>
-						<h2 class="font-bold text-lg">{project.name}</h2>
+						<h2 class="font-bold text-lg h-8 leading-8">{project.name}</h2>
 					</div>
 					<p>{project.description}</p>
 				</a>
