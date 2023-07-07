@@ -4,10 +4,15 @@
 	let y: number;
 </script>
 
+<svelte:head>
+	<title>Sean Collings</title>
+</svelte:head>
+
 <nav class:scolled={y > 32}>
 	<a href="/">Home</a>
 	<a href="/projects">Projects</a>
 	<a href="/skills">Skills</a>
+	<a href="/assets/resume.pdf">Resume</a>
 </nav>
 <main>
 	<slot />

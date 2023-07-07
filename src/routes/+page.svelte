@@ -39,20 +39,14 @@
 					as a full stack developer.
 				</p>
 				<p class="mb-4 leading-7">
-					Duis sint aute ad nulla laboris minim esse anim eiusmod elit ex. Sit quis enim fugiat
-					deserunt fugiat consectetur aliquip. Ea cillum irure id cillum enim reprehenderit nisi
-					cupidatat. Enim excepteur labore duis officia.
+					I grew up in small town in northern Utah, and I've been programming since I was 12. I love
+					to learn new things, and I'm always looking for new opportunities to grow and improve.
 				</p>
 				<p class="mb-4 leading-7">
-					Labore ut fugiat nulla Lorem sint non ut Lorem sint esse incididunt. Duis aliqua qui id
-					sint ea officia proident. In exercitation proident anim anim do. Eiusmod ut est laboris ex
-					eu sint esse reprehenderit ex occaecat velit ea id sit.
+					I earned a certification in Information Technology from Bridgerland Technical College in
+					2019 and I graduated from Utah State University in 2023 with a degree in Computer Science.
 				</p>
-				<p class="mb-4 leading-7">
-					Duis sint aute ad nulla laboris minim esse anim eiusmod elit ex. Sit quis enim fugiat
-					deserunt fugiat consectetur aliquip. Ea cillum irure id cillum enim reprehenderit nisi
-					cupidatat. Enim excepteur labore duis officia.
-				</p>
+				<p class="mb-4 leading-7">Some of my passions are programming, books, and video games.</p>
 			</div>
 		</div>
 	</div>
