@@ -16,7 +16,7 @@
 		<div class="xl:ml-[5%] xl:mt-[8%] sm:p-2 w-fit max-w-7xl grid lg:grid-cols-2 gap-4 ">
 			<div class="flex flex-col gap-4 items-center">
 				<img
-					src="https://seancollings.dev/static/media/small3.5783a9a0.png"
+					src="/assets/me.jpg"
 					alt="It me!"
 					class="rounded-full h-[300px] w-[300px] md:h-[400px] md:w-[400px] border-8 border-white"
 				/>
