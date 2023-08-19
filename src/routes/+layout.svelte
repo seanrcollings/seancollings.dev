@@ -30,10 +30,10 @@
 	}
 
 	main {
-		@apply overflow-y-auto h-full;
+		@apply h-full bg-slate-800 min-h-screen;
 	}
 
 	.scolled {
-		@apply bg-slate-700 drop-shadow-md;
+		@apply bg-slate-700 opacity-90 drop-shadow-md;
 	}
 </style>

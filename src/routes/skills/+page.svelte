@@ -15,10 +15,21 @@
 
 		return skill.profiecencyLevels.includes(profiencyFilter);
 	});
+
+	// Disabling fancy animations for now
+	/*
+	in:fly|local={{ y: Math.random() * 300 + 100, x: Math.random() * 200, duration: 1000 }}
+	out:fly|local={{ y: Math.random() * 300 + 100, x: Math.random() * 200, duration: 1000 }}
+	*/
 </script>
 
-<div class="flex pt-16 bg-slate-800 h-full flex-col gap-1 lg:gap-10 lg:px-36 lg:flex-row">
-	<div class="flex-[50%] flex justify-center items-center lg:items-end flex-col gap-1" in:fade={{ duration: 800 }}>
+<div
+	class="flex pt-16 bg-slate-800 min-h-screen flex-col gap-1 p-2 lg:p-0 lg:gap-10 lg:px-36 lg:flex-row"
+>
+	<div
+		class="flex-[50%] flex justify-center items-center lg:items-end flex-col gap-1"
+		in:fade={{ duration: 800 }}
+	>
 		<div class="flex flex-col w-96">
 			<h1 class="text-purple-100 text-xl">Filter by things that I am:</h1>
 			{#each data.profiencyFilters as filter (filter.profiency)}
@@ -36,7 +47,7 @@
 						setTimeout(() => (enabled = true), 1100);
 					}}
 				>
-					<h2 class="text-4xl">
+					<h2 class="lg:text-4xl text-2xl">
 						{filter.title}
 					</h2>
 					{#if profiencyFilter === filter.profiency}
@@ -53,8 +64,6 @@
 		<div class="max-w-2xl mx-auto">
 			{#each filteredSkills as skill (skill.name)}
 				<div
-					in:fly|local={{ y: Math.random() * 300 + 100, x: Math.random() * 200, duration: 1000 }}
-					out:fly|local={{ y: Math.random() * 300 + 100, x: Math.random() * 200, duration: 1000 }}
 					animate:flip={{ duration: 1000 }}
 					class="bg-slate-600 text-white m-1 p-2 rounded-md inline-flex items-center flex-none"
 				>

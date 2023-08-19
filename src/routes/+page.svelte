@@ -1,24 +1,18 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
-
-	let width = 10000;
 </script>
 
-<svelte:window bind:innerWidth={width} />
-
-<div class="bg-slate-800">
+<div class="bg-slate-800 h-full flex">
 	<div
-		class="pt-16 triangle h-[100vh] w-full bg-indigo-500 lg:bg-transparent"
+		class="pt-16 triangle lg:h-[100vh] w-full bg-indigo-500 lg:bg-transparent h-full triangle"
 		transition:fly={{ x: -500 }}
-		class:triangle={width >= 1024}
 	>
-		<div class="xl:ml-[5%] xl:mt-[8%] sm:p-2 w-fit max-w-7xl grid lg:grid-cols-2 gap-4 ">
+		<div class="xl:ml-[5%] xl:mt-[8%] sm:p-2 w-fit max-w-7xl grid lg:grid-cols-2 gap-4">
 			<div class="flex flex-col gap-4 items-center">
 				<img
 					src="/assets/me.jpg"
 					alt="It me!"
-					class="rounded-full h-[300px] w-[300px] md:h-[400px] md:w-[400px] border-8 border-white"
+					class="rounded-full h-[250px] w-[250px] md:h-[400px] md:w-[400px] border-8 border-white"
 				/>
 				<h1 class="text-white font-mont font-bold text-8xl text-center">
 					Hello! <span>👋</span>
@@ -53,8 +47,10 @@
 </div>
 
 <style lang="postcss">
-	.triangle {
-		background: linear-gradient(135deg, theme(colors.indigo.500) 70%, transparent 40%);
-		filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.4));
+	@media (min-width: 1024px) {
+		.triangle {
+			background: linear-gradient(135deg, theme(colors.indigo.500) 70%, transparent 40%);
+			filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.4));
+		}
 	}
 </style>

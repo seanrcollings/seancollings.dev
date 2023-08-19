@@ -11,7 +11,6 @@ const PROJECTS_URL =
 export async function load({ fetch }) {
 	const res = await fetch(PROJECTS_URL);
 	const projects: Project[] = await res.json();
-	console.log(projects);
 
 	return { projects };
 }
