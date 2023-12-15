@@ -12,7 +12,7 @@
 	/>
 </svelte:head>
 
-<div class="flex pt-24 bg-slate-800 h-full text-gray-50">
+<div class="flex pt-24 h-full text-gray-50 z-10">
 	<div class="lg:w-1/2 lg:mx-auto m-5" in:fade={{ duration: 800 }}>
 		<p class="pb-12 text-lg">
 			Here's a list of some of the projects I've worked on. I've worked on a lot more, but these are

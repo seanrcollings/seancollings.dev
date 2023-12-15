@@ -23,9 +23,7 @@
 	*/
 </script>
 
-<div
-	class="flex pt-16 bg-slate-800 min-h-screen flex-col gap-1 p-2 lg:p-0 lg:gap-10 lg:px-36 lg:flex-row"
->
+<div class="flex pt-16 min-h-screen flex-col gap-1 p-2 lg:p-0 lg:gap-10 lg:px-36 lg:flex-row">
 	<div
 		class="flex-[50%] flex justify-center items-center lg:items-end flex-col gap-1"
 		in:fade={{ duration: 800 }}

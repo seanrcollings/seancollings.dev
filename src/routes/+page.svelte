@@ -2,7 +2,7 @@
 	import { fly } from 'svelte/transition';
 </script>
 
-<div class="bg-slate-800 h-[100vh] flex">
+<div class="h-[100vh] flex">
 	<div
 		class="pt-16 triangle lg:min-h-[100vh] w-full bg-indigo-500 lg:bg-transparent h-full z-10"
 		transition:fly={{ x: -500 }}
@@ -44,13 +44,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="iframe-container">
+	<!-- <div class="iframe-container">
 		<iframe
 			src="https://procedural-ships.vercel.app/?fighterCount=10&scoutCount=15&transportCount=5&starCount=200"
 			height="100%"
 			width="100%"
 		/>
-	</div>
+	</div> -->
 </div>
 
 <style lang="postcss">
