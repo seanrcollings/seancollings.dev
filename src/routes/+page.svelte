@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
+	import { PUBLIC_PROC_SHIPS_URL } from '$env/static/public';
 </script>
 
 <div class="bg-slate-800 h-[100vh] flex">
@@ -44,23 +45,36 @@
 			</div>
 		</div>
 	</div>
-	<div class="iframe-container">
+	<div class="iframe-container" out:fade>
 		<iframe
-			src="https://procedural-ships.vercel.app/?fighterCount=10&scoutCount=15&transportCount=5&starCount=200"
+			src="{PUBLIC_PROC_SHIPS_URL}/embedded?fighterCount=10&scoutCount=15&transportCount=5&starCount=200"
 			height="100%"
 			width="100%"
+			title="Space Ship Background"
 		/>
 	</div>
 </div>
 
 <style lang="postcss">
+	/* Don't render the iframe on mobile */
 	.iframe-container {
+		opacity: 0;
 		display: none;
 		position: absolute;
 		bottom: 0;
 		right: 0;
 		width: 100%;
 		height: 100%;
+		animation: fade-in 2s ease-in-out forwards 0s 1 normal;
+	}
+
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
 	}
 
 	@media (min-width: 1024px) {
