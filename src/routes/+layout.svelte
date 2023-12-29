@@ -8,7 +8,7 @@
 	<title>Sean Collings</title>
 </svelte:head>
 
-<nav class:scolled={y > 32}>
+<nav class:scrolled={y > 32}>
 	<a href="/">Home</a>
 	<a href="/projects">Projects</a>
 	<a href="/skills">Skills</a>
@@ -30,10 +30,10 @@
 	}
 
 	main {
-		@apply h-full bg-slate-800 min-h-screen;
+		@apply bg-slate-800 min-h-screen;
 	}
 
-	.scolled {
+	.scrolled {
 		@apply bg-slate-700 opacity-90 drop-shadow-md;
 	}
 </style>

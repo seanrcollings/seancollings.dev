@@ -3,11 +3,8 @@
 	import { PUBLIC_PROC_SHIPS_URL } from '$env/static/public';
 </script>
 
-<div class="bg-slate-800 h-[100vh] flex">
-	<div
-		class="pt-16 triangle lg:min-h-[100vh] w-full bg-indigo-500 lg:bg-transparent h-full z-10"
-		transition:fly={{ x: -500 }}
-	>
+<div class="bg-slate-800 min-h-[100vh] flex">
+	<div class="pt-16 triangle lg:min-h-[100vh] w-full z-10" transition:fly={{ x: -500 }}>
 		<div class="xl:ml-[5%] xl:mt-[8%] sm:p-2 w-fit max-w-7xl grid lg:grid-cols-2 gap-4">
 			<div class="flex flex-col gap-4 items-center">
 				<img
@@ -77,7 +74,11 @@
 		}
 	}
 
-	@media (min-width: 1024px) {
+	.triangle {
+		background-color: theme(colors.indigo.500);
+	}
+
+	@media (min-width: 1024px) and (min-height: 800px) {
 		.triangle {
 			background: linear-gradient(135deg, theme(colors.indigo.500) 70%, transparent 40%);
 			filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.4));
